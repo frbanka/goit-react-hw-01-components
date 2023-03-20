@@ -4,7 +4,7 @@
   justify-content: center;
   flex-direction: column;
   background-color: beige;
-  width: 100%;
+  width: 1200px;
 }
 .transactions__title {
   font-weight: 700;
