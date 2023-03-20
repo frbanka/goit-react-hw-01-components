@@ -21,15 +21,14 @@
   flex-basis: 250px;
   gap: 10px;
   width: inherit;
-  padding: 10px;
 }
 .friends__item {
   display: flex;
   justify-content: center;
   align-items: center;
   box-shadow: 0 0 10px #c6cccced;
-  padding: 30px;
   width: 250px;
+  padding: 25px;
   cursor: pointer;
   background-color: #fff;
 }
