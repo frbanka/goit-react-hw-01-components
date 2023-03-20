@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 
 export const Transactions = ({ items }) => {
   return (
+    <div className={css.transactions}>
+      <p className={css.transactions__title}>Transactions history:</p>
     <table>
       <thead>
         <tr>
@@ -24,11 +26,9 @@ export const Transactions = ({ items }) => {
         })}
       </tbody>
     </table>
+    </div>
   );
 };
 Transactions.propTypes = {
-  id: PropTypes.string.isRequired,
-  type: PropTypes.string.isRequired,
-  amount: PropTypes.string.isRequired,
-  currency: PropTypes.string.isRequired,
+  items: PropTypes.array.isRequired,
 };

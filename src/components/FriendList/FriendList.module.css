@@ -1,44 +1,58 @@
 .friends {
   display: flex;
   align-items: center;
-  margin-top: 30px;
+  justify-content: center;
   flex-direction: column;
-  width: 370px;
+  background-color: rgb(212, 255, 223);
+  width: 100%;
+}
+.friends__title {
+  font-weight: 700;
+  font-size: 30px;
+  color: #75002b;
 }
 
 .friends__list {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-basis: 250px;
+  gap: 10px;
   width: inherit;
-  padding: 0;
+  padding: 10px;
 }
 .friends__item {
   display: flex;
+  justify-content: center;
   align-items: center;
   box-shadow: 0 0 10px #c6cccced;
-  padding: 20px;
+  padding: 30px;
+  width: 250px;
+  cursor: pointer;
+  background-color: #fff;
 }
-
 .friends__status {
-  width: 30px;
-  height: 30px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
-  margin-right: 20px;
+  margin-right: 10px;
 }
 .true {
   background-color: green;
 }
 .false {
-  background-color: red;
+  background-color: #75002b;
 }
 
 .avatar {
-  width: 100px;
-  margin-right: 10px;
+  width: 80px;
+  padding-right: 10px;
 }
 .friends__name {
   font-weight: 700;
-  font-size: 30px;
+  font-size: 25px;
   margin-bottom: 15px;
-  color: #524a4d;
+  color: #75002b;
 }

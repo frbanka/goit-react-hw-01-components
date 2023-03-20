@@ -3,28 +3,30 @@ import PropTypes from 'prop-types';
 
 export const Profile = ({ username, tag, location, avatar, stats }) => {
   return (
-    <div className={css.class}>
-      <div className={css.class}>
-        <img src={avatar} alt={username} className={css.class} />
-        <p className={css.class}>{username}</p>
-        <p className={css.class}>{tag}</p>
-        <p className={css.class}>{location}</p>
+    <section className={css.profile}>
+    <div className={css.profile__card}>
+      <div className={css.description}>
+        <img src={avatar} alt={username} className={css.avatar} />
+        <p className={css.name}>{username}</p>
+        <p className={css.tag}>aka #{tag}</p>
+        <p className={css.location}>from '{location}'</p>
       </div>
-      <ul className={css.class}>
+      <ul className={css.stats}>
         <li>
-          <span className={css.class}>Followers</span>
-          <span className={css.class}>{stats.followers}</span>
+          <span className={css.title}>Followers</span>
+          <span className={css.numbers}>{stats.followers}</span>
         </li>
         <li>
-          <span className={css.class}>Views</span>
-          <span className={css.class}>{stats.views}</span>
+          <span className={css.title}>Views</span>
+          <span className={css.numbers}>{stats.views}</span>
         </li>
         <li>
-          <span className={css.class}>Likes</span>
-          <span className={css.class}>{stats.likes}</span>
+          <span className={css.title}>Likes</span>
+          <span className={css.numbers}>{stats.likes}</span>
         </li>
       </ul>
     </div>
+    </section>
   );
 };
 Profile.propTypes = {
